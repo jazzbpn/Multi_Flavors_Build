@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "234907220846",
+    "firebase_url": "https://test-project-bab53.firebaseio.com",
+    "project_id": "test-project-bab53",
+    "storage_bucket": "test-project-bab53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234907220846:android:8d95a0fcd64c7f98",
+        "android_client_info": {
+          "package_name": "today.tootle.multiflavourapp.free"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234907220846-s5svoqacih3o334k4bmrh96aj4p0a9pu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaiC-IkXyOWiknbMt4UDkyms7p2lMKSso"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234907220846:android:d3d64a8a5632561d",
+        "android_client_info": {
+          "package_name": "today.tootle.multiflavourapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234907220846-s5svoqacih3o334k4bmrh96aj4p0a9pu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaiC-IkXyOWiknbMt4UDkyms7p2lMKSso"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234907220846:android:c26742c550334ba5",
+        "android_client_info": {
+          "package_name": "today.tootle.multiflavourapp.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234907220846-s5svoqacih3o334k4bmrh96aj4p0a9pu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaiC-IkXyOWiknbMt4UDkyms7p2lMKSso"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234907220846:android:54c53bae66c030c8",
+        "android_client_info": {
+          "package_name": "today.tootle.multiflavourapp.free.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234907220846-s5svoqacih3o334k4bmrh96aj4p0a9pu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaiC-IkXyOWiknbMt4UDkyms7p2lMKSso"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
