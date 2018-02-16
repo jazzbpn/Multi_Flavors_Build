@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "today.tootle.multiflavourapp"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+
+    /** REFERENCE
+     *
+     * https://stackoverflow.com/questions/32742184/multiple-signingconfigs-for-multiple-variants
+     * http://onebigfunction.com/android/2016/10/06/flavor-flav-android-product-flavors-explained/
+     *
+     * */
+
+    signingConfigs {
+        paidRelease {
+            storeFile file("pro")
+            storePassword "123456"
+            keyAlias "bipinpandey"
+            keyPassword "123456"
+        }
+        freeRelease {
+            storeFile file("free")
+            storePassword "123456"
+            keyAlias "bipinpandey"
+            keyPassword "123456"
+        }
+    }
+
+    flavorDimensions 'flavor'
+    productFlavors {
+        paid {
+            dimension 'flavor'
+            minSdkVersion 15
+            applicationId 'today.tootle.multiflavourapp'
+            targetSdkVersion 26
+            versionCode 1
+            versionName '1.0'
+//            resValue "string", "app_name", "App-Paid"
+            manifestPlaceholders = [applicationLabel: "APP_PAID",appIcon: "@mipmap/ic_launcher_paid"]
+        }
+
+        free {
+            dimension 'flavor'
+            minSdkVersion 15
+            applicationId 'today.tootle.multiflavourapp.free'
+            targetSdkVersion 26
+            versionCode 1
+            versionName '1.0'
+//            resValue "string", "app_name", "App-Free"
+            manifestPlaceholders = [applicationLabel: "APP_FREE", appIcon: "@mipmap/ic_launcher"]
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            productFlavors.paid.signingConfig signingConfigs.paidRelease
+            productFlavors.free.signingConfig signingConfigs.freeRelease
+            debuggable false
+        }
+
+        debug {
+            applicationIdSuffix ".debug"
+            debuggable true
+        }
+
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
